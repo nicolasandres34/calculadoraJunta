@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Completos 🌭</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+
+    <a href="completos.html" class="nav-link active">🌭 Completos</a>
+    <a href="asado.html" class="nav-link">🥩 Asado</a>
+
+    </nav>
+
+<div class="container">
+
+    <h1>Calculadora de Completos 🌭</h1>
+
+    <div class="field">
+        <label for="personas">Número de personas</label>
+        <input type="number" id="personas" min="1" value="3">
+    </div>
+    <div class="field">
+        <label for="completosPorPersona">Completos por persona</label>
+        <input type="number" id="completosPorPersona" min="1" value="2">
+    </div>
+
+    <div class="field">
+        <label>
+            <input type="checkbox" id="genteMas">
+            Hay gente que come más
+        </label>
+    </div>
+
+    <div class="field" id="genteMasContainer">
+        <label for="cuantosMas">¿Cuántos comen uno más?</label>
+        <input type="number" id="cuantosMas" min="1" value="1">
+    </div>
+
+    <button id="calcular">Calcular ingredientes</button>
+
+        <div id="loader" class="dots-loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    <div id="resultado">
+        Aquí aparecerán los ingredientes necesarios.
+    </div>
+
+</div>
+
+</body>
+    <footer class="footer">
+    Made by:
+    Nicolas Seura.
+    </footer>
+<script src="script.js"></script>
+</html>

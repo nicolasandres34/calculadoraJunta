@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Calculadora de Asado</title>
+
+<link rel="stylesheet" href="asado.css">
+
+</head>
+
+<body>
+    <nav class="top-nav">
+
+        <a href="completos.html" class="nav-link">🌭 Completos</a>
+        <a href="asado.html" class="nav-link active">🥩 Asado</a>
+
+    </nav>
+
+    <div class="container">
+
+        <h1>Calculadora de Asado 🥩🔥</h1>
+
+        <div class="field">
+            <label>Personas</label>
+            <input type="number" id="personas" value="10" min="1">
+        </div>
+
+        <h3>Tipos de carne</h3>
+
+        <label>
+            <input type="checkbox" class="carne" value="carne">
+            Carne
+        </label>
+
+        <label>
+            <input type="checkbox" class="carne" value="pollo">
+            Pollo
+        </label>
+
+        <label>
+            <input type="checkbox" class="carne" value="cerdo">
+            Cerdo
+        </label>
+
+        <label>
+            <input type="checkbox" class="carne" value="choripan">
+            Choripanes
+        </label>
+
+        <button id="calcular">Calcular</button>
+
+        <div id="loader" class="dots-loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="asado.js"></script>
+
+</body>
+
+<footer class="footer">
+Made by:
+ Nicolas Seura.
+</footer>
+
+</html>
